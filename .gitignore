@@ -1,0 +1,4 @@
+plugins/
+lazy-lock.json
+lua/.luarc.json
+*.json
