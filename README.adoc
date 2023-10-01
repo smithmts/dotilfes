@@ -41,3 +41,4 @@ Only use plugins that can be installed via Pacman.  No frameworks, no plugin man
 == Work-in-progress Cheat Sheets
 
 * (Neo)Vim
+

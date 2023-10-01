@@ -1,0 +1,59 @@
+= Cheatsheet for Vim / Neovim
+:toc:
+:hardbreaks-option:
+
+== Command Line
+
+=== Substitute using vim through command line
+
+[source,zsh]
+----
+vim +%s/pancake/bagel/g hello.txt
+----
+
+or
+[source,zsh]
+----
+vim -c %s/pancake/bagel/g hello.txt
+----
+
+=== If you press Ctrl-z to suspend and are ready to bring it back
+
+[source,zsh]
+----
+fg
+----
+
+=== Redirect output to vim
+
+Can pipe it in.  Example with ls:
+
+[source,zsh]
+----
+ls-l | vim
+----
+
+=== Open vim with splits already in place
+
+Horizontal - little "o"
+
+[source,zsh]
+----
+vim -o5 hello1.txt hello2.txt
+----
+
+Vertical - big "O"
+
+[source,zsh]
+----
+vim -O5 hello1.txt hello2.txt
+----
+
+== Window/Tab/Buffer Management
+
+=== Quit All Buffers
+
+[source,vimscript]
+----
+:qa
+----
