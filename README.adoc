@@ -1,0 +1,43 @@
+= Dotfiles
+:toc:
+:hardbreaks-option:
+
+== Included Configurations
+
+* https://www.vim.org/[Vim]
+* https://neovim.io/[Neovim]
+* https://zsh.sourceforge.io/[Zsh]
+
+== Goals / Guiding Principals
+
+=== Vim
+
+For scenarios I may find myself in someday where I have access to Vim but not Neovim.
+No plugins (except built-ins).
+
+=== Neovim
+
+My main PDE and local writing environment.
+I'm seeking to be conservative, and only add plug-ins/features when I feel like I grasp how to cope without them and how they add value.
+
+=== Zsh
+
+My main shell.
+
+Minimal in on-screen elements and overall complexity.
+
+Only use plugins that can be installed via Pacman.  No frameworks, no plugin managers if I can help it.
+
+== Known Dependencies
+
+* For consolidating files in .dotfiles repository:
+** https://www.gnu.org/software/stow/[GNU Stow]
+* For glyphs in Zsh prompt:
+** A https://www.nerdfonts.com/[Nerd Font]
+* Zsh plugins:
+** https://archlinux.org/packages/extra/any/zsh-syntax-highlighting/[zsh-syntax-highlighting]
+**  https://archlinux.org/packages/extra/any/zsh-autosuggestions/[zsh-autosuggestions]
+
+== Work-in-progress Cheat Sheets
+
+* (Neo)Vim
