@@ -80,3 +80,7 @@ alias ls='ls --color=auto'
 
 # My preferred way to run ls.
 alias ll='ls -laht'
+
+# Connecting and disconnecting ProtonVPN via CLI.
+alias pvc='protonvpn-cli c'
+alias pvd='protonvpn-cli d'
