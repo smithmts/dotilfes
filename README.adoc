@@ -7,6 +7,7 @@
 * https://www.vim.org/[Vim]
 * https://neovim.io/[Neovim]
 * https://zsh.sourceforge.io/[Zsh]
+* https://git-scm.com/[Git]
 
 == Goals / Guiding Principals
 
@@ -28,6 +29,10 @@ Minimal in on-screen elements and overall complexity.
 
 Only use plugins that can be installed via Pacman.  No frameworks, no plugin managers if I can help it.
 
+=== Git
+
+No opinions at all.  Literally just the results of guides I've followed so far.
+
 == Known Dependencies
 
 * For consolidating files in .dotfiles repository:
@@ -41,4 +46,4 @@ Only use plugins that can be installed via Pacman.  No frameworks, no plugin man
 == Work-in-progress Cheat Sheets
 
 * (Neo)Vim
-
+* Git
