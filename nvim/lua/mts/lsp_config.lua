@@ -61,6 +61,8 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+
+  pylsp = {},
 }
 
 -- Setup mason so it can manage external tooling
