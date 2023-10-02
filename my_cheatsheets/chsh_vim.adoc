@@ -1,6 +1,5 @@
 = Cheatsheet for Vim / Neovim
 :toc:
-:hardbreaks-option:
 
 == Command Line
 
