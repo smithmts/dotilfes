@@ -6,53 +6,143 @@
 === Substitute using vim through command line
 
 [source,zsh]
-----
 vim +%s/pancake/bagel/g hello.txt
-----
 
 or
 [source,zsh]
-----
 vim -c %s/pancake/bagel/g hello.txt
-----
 
 === If you press Ctrl-z to suspend and are ready to bring it back
 
 [source,zsh]
-----
 fg
-----
 
 === Redirect output to vim
 
 Can pipe it in.  Example with ls:
 
 [source,zsh]
-----
 ls-l | vim
-----
 
 === Open vim with splits already in place
 
-Horizontal - little "o"
-
+.Horizontal - little "o"
 [source,zsh]
-----
 vim -o5 hello1.txt hello2.txt
-----
 
-Vertical - big "O"
-
+.Vertical - big "O"
 [source,zsh]
-----
 vim -O5 hello1.txt hello2.txt
-----
+
+== Motions / Operators
+
+`{}`   Move to previous/next paragraph.
+`Ctrl-r`   Redo (Undo an Undo)
+
+=== Text Objects
+
+`i`   Inner
+`a`   Outer (get the spaces, parenthesis, et cetera)
+
+`t`   XML or HTML Tags
+
+==== Pairs:
+
+()
+
+{}
+
+[]
+
+<>
+
+''
+
+``
 
 == Window/Tab/Buffer Management
 
 === Quit All Buffers
 
 [source,vimscript]
-----
 :qa
+
+=== Switch between buffers in splits.
+
+`Ctrl-W H`   Moves the cursor to the left window
+
+`Ctrl-W J`   Moves the cursor to the window below
+
+`Ctrl-W K`   Moves the cursor to the window upper
+
+`Ctrl-W L`   Moves the cursor to the right window
+
+`CTRL-W W`   Does... Something.  Switches between?
+
+=== Tabs
+
+`gt`	Next tab
+`gT`	Previous tab
+
+== Opening Files
+
+=== See tab-complete options for all .ext files in directory.
+
+[source,vimscript]
+:e *.ext<Tab>
+
+=== See tab-complete options for all .ext files, recursively in subdirectories.
+
+[source,vimscript]
+:e **/*.ext<Tab>
+
+=== Quickfix List
+
+.Search Recursively Within Working Directory (and create Quickfix List)
+[source,vimscript]
+:vim /searchterm/ *
+
+.Open/Close the Quickfix List
+[source,vimscript]
 ----
+:copen
+:ccl
+----
+
+.Navigate The Quickfix List
+[source,vimscript]
+----
+:cfirst
+:clast
+:cnext
+:cprev
+:cc 1
+----
+
+.Command on Multiple Files
+[source,vimscript]
+:cdo s/foo/bar | update
+
+== Netrw
+
+`%`   Create a new file
+`d`   Create a new directory
+
+== Help Pages
+
+.Enter stuff like CTRL ALT SHIFT into commands.
+[source,vimscript]
+:help key-notation
+
+.Windows
+[source,vimscript]
+:help window
+
+.Netrw
+[source,vimscript]
+: h netrw
+
+.Text Objects
+[source,vimscript]
+: h text-objects
+

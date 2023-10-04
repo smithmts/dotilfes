@@ -4,9 +4,7 @@
 == Undo changes before staging
 
 [source,zsh]
-----
 git checkout <file>
-----
 
 
 Reverts to version submitted in last commit.
@@ -14,9 +12,7 @@ Reverts to version submitted in last commit.
 == Un-stage a file before committing.
 
 [source,zsh]
-----
 git revert HEAD <filename>
-----
 
 
 == Undo a commit
@@ -24,25 +20,19 @@ git revert HEAD <filename>
 === Revert to most recent commit.
 
 [source,zsh]
-----
 git revert HEAD
-----
 
 
 === Revert to specific commit.
 
 [source,zsh]
-----
 git revert <hash>
-----
 
 
 == Amend a commit.
 
 [source,zsh]
-----
 git commit --amend
-----
 
 
 Replaces the last commit with the new commit.
@@ -50,25 +40,19 @@ Replaces the last commit with the new commit.
 == Move files tracked in Git.
 
 [source,zsh]
-----
 git mv <file> <destination>
-----
 
 
 == Create a branch.
 
 [source,zsh]
-----
 git checkout -b <new branch name>
-----
 
 
 == Switch branches.
 
 [source,zsh]
-----
 git checkout <branch name>
-----
 
 
 == Merge
@@ -76,6 +60,5 @@ git checkout <branch name>
 WARNING: Start from the branch you want to bring changes into.  Specify the branch you want to bring changes from in the command.
 
 [source,zsh]
-----
 git merge <source branch>
-----
+

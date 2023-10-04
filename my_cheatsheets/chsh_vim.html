@@ -447,11 +447,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_open_vim_with_splits_already_in_place">Open vim with splits already in place</a></li>
 </ul>
 </li>
+<li><a href="#_motions_operators">Motions / Operators</a>
+<ul class="sectlevel2">
+<li><a href="#_text_objects">Text Objects</a></li>
+</ul>
+</li>
 <li><a href="#_windowtabbuffer_management">Window/Tab/Buffer Management</a>
 <ul class="sectlevel2">
 <li><a href="#_quit_all_buffers">Quit All Buffers</a></li>
+<li><a href="#_switch_between_buffers_in_splits">Switch between buffers in splits.</a></li>
+<li><a href="#_tabs">Tabs</a></li>
 </ul>
 </li>
+<li><a href="#_opening_files">Opening Files</a>
+<ul class="sectlevel2">
+<li><a href="#_see_tab_complete_options_for_all_ext_files_in_directory">See tab-complete options for all .ext files in directory.</a></li>
+<li><a href="#_see_tab_complete_options_for_all_ext_files_recursively_in_subdirectories">See tab-complete options for all .ext files, recursively in subdirectories.</a></li>
+<li><a href="#_quickfix_list">Quickfix List</a></li>
+</ul>
+</li>
+<li><a href="#_netrw">Netrw</a></li>
+<li><a href="#_help_pages">Help Pages</a></li>
 </ul>
 </div>
 </div>
@@ -496,20 +512,53 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_open_vim_with_splits_already_in_place">Open vim with splits already in place</h3>
-<div class="paragraph">
-<p>Horizontal - little "o"</p>
-</div>
 <div class="listingblock">
+<div class="title">Horizontal - little "o"</div>
 <div class="content">
 <pre class="highlight"><code class="language-zsh" data-lang="zsh">vim -o5 hello1.txt hello2.txt</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>Vertical - big "O"</p>
-</div>
 <div class="listingblock">
+<div class="title">Vertical - big "O"</div>
 <div class="content">
 <pre class="highlight"><code class="language-zsh" data-lang="zsh">vim -O5 hello1.txt hello2.txt</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_motions_operators">Motions / Operators</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>{}</code>   Move to previous/next paragraph.
+<code>Ctrl-r</code>   Redo (Undo an Undo)</p>
+</div>
+<div class="sect2">
+<h3 id="_text_objects">Text Objects</h3>
+<div class="paragraph">
+<p><code>i</code>   Inner
+<code>a</code>   Outer (get the spaces, parenthesis, et cetera)</p>
+</div>
+<div class="paragraph">
+<p><code>t</code>   XML or HTML Tags</p>
+</div>
+<div class="sect3">
+<h4 id="_pairs">Pairs:</h4>
+<div class="paragraph">
+<p>()</p>
+</div>
+<div class="paragraph">
+<p>{}</p>
+</div>
+<div class="paragraph">
+<p>&lt;&gt;</p>
+</div>
+<div class="paragraph">
+<p>''</p>
+</div>
+<div class="paragraph">
+<p>``</p>
 </div>
 </div>
 </div>
@@ -526,12 +575,128 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_switch_between_buffers_in_splits">Switch between buffers in splits.</h3>
+<div class="paragraph">
+<p><code>Ctrl-W H</code>   Moves the cursor to the left window</p>
+</div>
+<div class="paragraph">
+<p><code>Ctrl-W J</code>   Moves the cursor to the window below</p>
+</div>
+<div class="paragraph">
+<p><code>Ctrl-W K</code>   Moves the cursor to the window upper</p>
+</div>
+<div class="paragraph">
+<p><code>Ctrl-W L</code>   Moves the cursor to the right window</p>
+</div>
+<div class="paragraph">
+<p><code>CTRL-W W</code>   Does&#8230;&#8203; Something.  Switches between?</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tabs">Tabs</h3>
+<div class="paragraph">
+<p><code>gt</code>	Next tab
+<code>gT</code>	Previous tab</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opening_files">Opening Files</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_see_tab_complete_options_for_all_ext_files_in_directory">See tab-complete options for all .ext files in directory.</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:e *.ext&lt;Tab&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_see_tab_complete_options_for_all_ext_files_recursively_in_subdirectories">See tab-complete options for all .ext files, recursively in subdirectories.</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:e **/*.ext&lt;Tab&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quickfix_list">Quickfix List</h3>
+<div class="listingblock">
+<div class="title">Search Recursively Within Working Directory (and create Quickfix List)</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:vim /searchterm/ *</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Open/Close the Quickfix List</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:copen
+:ccl</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Navigate The Quickfix List</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:cfirst
+:clast
+:cnext
+:cprev
+:cc 1</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Command on Multiple Files</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:cdo s/foo/bar | update</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_netrw">Netrw</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>%</code>   Create a new file
+<code>d</code>   Create a new directory</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_help_pages">Help Pages</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">Enter stuff like CTRL ALT SHIFT into commands.</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:help key-notation</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Windows</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:help window</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Netrw</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">: h netrw</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Text Objects</div>
+<div class="content">
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">: h text-objects</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-10-01 19:09:23 -0700
+Last updated 2023-10-03 18:53:11 -0700
 </div>
 </div>
 </body>
