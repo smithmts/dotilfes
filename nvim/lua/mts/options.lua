@@ -4,7 +4,7 @@
 
 -- Show relative line numbers
 vim.opt.relativenumber = true
--- Show actual line number on curent line
+-- Show actual line number on current line
 vim.opt.number = true
 
 -- Minimum number of lines to keep above and below cursor
@@ -22,10 +22,10 @@ vim.opt.cursorline = true
 -- Text Options
 -----------------------------------------------------------------------
 
---  Allow backspace over autoindent, end of line, and start of insert.
+--  Allow backspace over auto-indent, end of line, and start of insert.
 vim.opt.backspace = "indent,eol,start"
 
--- Set number of spaces for autoindent
+-- Set number of spaces for auto-indent
 vim.opt.shiftwidth = 4
 
 -- Set number of spaces for <tab>
@@ -73,7 +73,9 @@ vim.opt.mouse = 'a'
 vim.opt.hidden = true
 
 -- Enaable spell check.
-vim.opt.spell = true
+-- vim.opt.spell = true
+-- Disabled.  To irritating for non-prose files.  Need to look into
+-- how to handle that better.  I'm sure a solution is there.
 
 -- Highlight on Yank - taken from nvim-lua/kickstart.nvim 
 -- See `:help vim.highlight.on_yank()`
