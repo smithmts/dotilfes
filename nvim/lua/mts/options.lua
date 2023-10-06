@@ -1,73 +1,85 @@
--- [[View Options]]
+-----------------------------------------------------------------------
+-- View Options
+-----------------------------------------------------------------------
 
 -- Show relative line numbers
-vim.o.relativenumber = true
+vim.opt.relativenumber = true
 -- Show actual line number on curent line
-vim.o.number = true
+vim.opt.number = true
 
 -- Minimum number of lines to keep above and below cursor
-vim.o.scrolloff = 8
+vim.opt.scrolloff = 8
 
 -- Vertical lines at columns 72 and 80
-vim.o.colorcolumn = "72,80"
+vim.opt.colorcolumn = "72,80"
 -- Set color of colorcolumn
 vim.cmd([[highlight ColorColumn ctermbg=DarkGrey]])
 
 -- Highlight current line
-vim.o.cursorline = true
+vim.opt.cursorline = true
 
--- [[Text Options]] 
+-----------------------------------------------------------------------
+-- Text Options
+-----------------------------------------------------------------------
 
 --  Allow backspace over autoindent, end of line, and start of insert.
-vim.o.backspace = "indent,eol,start"
+vim.opt.backspace = "indent,eol,start"
 
 -- Set number of spaces for autoindent
-vim.o.shiftwidth = 4
+vim.opt.shiftwidth = 4
 
 -- Set number of spaces for <tab>
-vim.o.tabstop 	= 4
+vim.opt.tabstop 	= 4
 
 -- Keep indent when text breaks to new line
-vim.o.breakindent = true
+vim.opt.breakindent = true
 
 
--- [[Search Options]]
+-----------------------------------------------------------------------
+-- Search Options
+-----------------------------------------------------------------------
 
 -- Disable last search remaining highlighted
-vim.o.hlsearch 	= false
+vim.opt.hlsearch 	= false
 
 -- Case insensitive search
-vim.o.ignorecase = true
+vim.opt.ignorecase = true
 -- Revert to case sensitive search when /C or capital in search
-vim.o.smartcase = true
+vim.opt.smartcase = true
 
 
--- [[Theming]]
+-----------------------------------------------------------------------
+-- Theming
+-----------------------------------------------------------------------
 
 -- Enable Terminal GUI Colors (more than 256 colors)
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 
 -- Use Adwaita colorscheme (see lazy.lua for plugin install)
 vim.cmd([[colorscheme adwaita]])
 
 
--- [[Misc Options]]
+-----------------------------------------------------------------------
+-- Misc Options
+-----------------------------------------------------------------------
 
 -- Use system clipboard
-vim.o.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+vim.opt.mouse = 'a'
 
 -- Enable hidden mode, allowing switching buffers without writing.
-vim.o.hidden = true
+vim.opt.hidden = true
 
 -- Enaable spell check.
-vim.o.spell = true
+vim.opt.spell = true
 
 -- Highlight on Yank - taken from nvim-lua/kickstart.nvim 
 -- See `:help vim.highlight.on_yank()`
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+local highlight_group = vim.api.nvim_create_augroup(
+	'YankHighlight', { clear = true }
+	)
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
     vim.highlight.on_yank()
