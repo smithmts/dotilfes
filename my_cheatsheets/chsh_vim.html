@@ -449,6 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_motions_operators">Motions / Operators</a>
 <ul class="sectlevel2">
+<li><a href="#_scrolling">Scrolling</a></li>
 <li><a href="#_text_objects">Text Objects</a></li>
 </ul>
 </li>
@@ -531,8 +532,37 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_motions_operators">Motions / Operators</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><code>{}</code>   Move to previous/next paragraph.
-<code>Ctrl-r</code>   Redo (Undo an Undo)</p>
+<p><code>^</code>         Go to the first nonblank char in the current line</p>
+</div>
+<div class="paragraph">
+<p><code>g_</code>        Go to the last non-blank char in the current line</p>
+</div>
+<div class="paragraph">
+<p><code>$</code>         Go to the last char in the current line</p>
+</div>
+<div class="paragraph">
+<p><code>%</code>         Swap betweens end of a pair.</p>
+</div>
+<div class="paragraph">
+<p><code>Ctrl-r</code>    Redo (Undo an Undo)</p>
+</div>
+<div class="sect2">
+<h3 id="_scrolling">Scrolling</h3>
+<div class="paragraph">
+<p><code>Ctrl-d</code>	Down half screen</p>
+</div>
+<div class="paragraph">
+<p><code>Ctrl-u</code>	Up half screen</p>
+</div>
+<div class="paragraph">
+<p><code>zt</code>		Scroll to cursor near top</p>
+</div>
+<div class="paragraph">
+<p><code>zz</code>		Scroll to cursor near middle</p>
+</div>
+<div class="paragraph">
+<p><code>zb</code>		Scroll to cursor near bottom</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_text_objects">Text Objects</h3>
@@ -546,10 +576,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_pairs">Pairs:</h4>
 <div class="paragraph">
-<p>()</p>
+<p>()   Sentance</p>
 </div>
 <div class="paragraph">
-<p>{}</p>
+<p>{}   Paragraph</p>
 </div>
 <div class="paragraph">
 <p>&lt;&gt;</p>
@@ -659,8 +689,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_netrw">Netrw</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><code>%</code>   Create a new file
-<code>d</code>   Create a new directory</p>
+<p><code>%</code>   Create a new file</p>
+</div>
+<div class="paragraph">
+<p><code>d</code>   Create a new directory</p>
+</div>
+<div class="paragraph">
+<p>Press enter Quick Help Bar to cycle through actions.</p>
 </div>
 </div>
 </div>
@@ -670,13 +705,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="listingblock">
 <div class="title">Enter stuff like CTRL ALT SHIFT into commands.</div>
 <div class="content">
-<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:help key-notation</code></pre>
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:h key-notation</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Windows</div>
 <div class="content">
-<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:help window</code></pre>
+<pre class="highlight"><code class="language-vimscript" data-lang="vimscript">:h window</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -696,7 +731,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-10-03 18:53:11 -0700
+Last updated 2023-10-03 22:50:50 -0700
 </div>
 </div>
 </body>

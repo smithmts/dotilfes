@@ -36,21 +36,41 @@ vim -O5 hello1.txt hello2.txt
 
 == Motions / Operators
 
-`{}`   Move to previous/next paragraph.
-`Ctrl-r`   Redo (Undo an Undo)
+`^`         Go to the first nonblank char in the current line
+
+`g_`        Go to the last non-blank char in the current line
+
+`$`         Go to the last char in the current line
+
+`%`         Swap betweens end of a pair.
+
+`Ctrl-r`    Redo (Undo an Undo)
+
+=== Scrolling
+
+`Ctrl-d`	Down half screen
+
+`Ctrl-u`	Up half screen
+
+`zt`		Scroll to cursor near top
+
+`zz`		Scroll to cursor near middle
+
+`zb`		Scroll to cursor near bottom
 
 === Text Objects
 
 `i`   Inner
+
 `a`   Outer (get the spaces, parenthesis, et cetera)
 
 `t`   XML or HTML Tags
 
 ==== Pairs:
 
-()
+()   Sentance
 
-{}
+{}   Paragraph
 
 []
 
@@ -126,17 +146,20 @@ vim -O5 hello1.txt hello2.txt
 == Netrw
 
 `%`   Create a new file
+
 `d`   Create a new directory
+
+Press enter Quick Help Bar to cycle through actions.
 
 == Help Pages
 
 .Enter stuff like CTRL ALT SHIFT into commands.
 [source,vimscript]
-:help key-notation
+:h key-notation
 
 .Windows
 [source,vimscript]
-:help window
+:h window
 
 .Netrw
 [source,vimscript]
