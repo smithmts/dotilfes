@@ -44,7 +44,7 @@ vim.o.smartcase = true
 
 -- [[Theming]]
 
--- Use Adwaita colorscheme (see packer.lua for plugin install)
+-- Use Adwaita colorscheme (see lazy.lua for plugin install)
 vim.cmd([[colorscheme adwaita]])
 
 
