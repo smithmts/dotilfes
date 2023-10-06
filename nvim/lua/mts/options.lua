@@ -11,9 +11,7 @@ vim.opt.number = true
 vim.opt.scrolloff = 8
 
 -- Vertical lines at columns 72 and 80
-vim.opt.colorcolumn = "72,80"
--- Set color of colorcolumn
-vim.cmd([[highlight ColorColumn ctermbg=DarkGrey]])
+vim.api.nvim_set_option_value('colorcolumn', '72,80', {})
 
 -- Highlight current line
 vim.opt.cursorline = true
@@ -23,7 +21,7 @@ vim.opt.cursorline = true
 -----------------------------------------------------------------------
 
 --  Allow backspace over auto-indent, end of line, and start of insert.
-vim.opt.backspace = "indent,eol,start"
+vim.opt.backspace = 'indent,eol,start'
 
 -- Set number of spaces for auto-indent
 vim.opt.shiftwidth = 4
@@ -56,7 +54,7 @@ vim.opt.smartcase = true
 vim.opt.termguicolors = true
 
 -- Use Adwaita colorscheme (see lazy.lua for plugin install)
-vim.cmd([[colorscheme adwaita]])
+vim.cmd.colorscheme('adwaita')
 
 
 -----------------------------------------------------------------------
@@ -64,7 +62,7 @@ vim.cmd([[colorscheme adwaita]])
 -----------------------------------------------------------------------
 
 -- Use system clipboard
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = 'unnamedplus'
 
 -- Enable mouse mode
 vim.opt.mouse = 'a'
