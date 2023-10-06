@@ -44,6 +44,9 @@ vim.o.smartcase = true
 
 -- [[Theming]]
 
+-- Enable Terminal GUI Colors (more than 256 colors)
+vim.o.termguicolors = true
+
 -- Use Adwaita colorscheme (see lazy.lua for plugin install)
 vim.cmd([[colorscheme adwaita]])
 
