@@ -49,3 +49,15 @@ vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, '[G]oto [
 nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
 --]]
+
+-----------------------------------------------------------------------
+-- Keybindings for moveline.nvim
+-----------------------------------------------------------------------
+
+local moveline = require('moveline')
+
+-- Alt key
+vim.keymap.set('n', '<A-k>', moveline.up)
+vim.keymap.set('n', '<A-j>', moveline.down)
+vim.keymap.set('v', '<A-k>', moveline.block_up)
+vim.keymap.set('v', '<A-j>', moveline.block_down)
