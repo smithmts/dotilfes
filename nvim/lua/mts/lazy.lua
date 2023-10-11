@@ -82,6 +82,12 @@ require('lazy').setup(
    		opts = { restriction_mode = "hint" }
 	},
 
+    -- Color code highlighter
+    {
+        'NvChad/nvim-colorizer.lua',
+        opts = { mode = "foreground" }
+    },
+
 
 },
 
