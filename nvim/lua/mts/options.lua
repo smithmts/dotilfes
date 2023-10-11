@@ -32,6 +32,9 @@ vim.opt.tabstop 	= 4
 -- Keep indent when text breaks to new line
 vim.opt.breakindent = true
 
+-- BANISH tabs
+vim.opt.expandtab = true
+
 
 -----------------------------------------------------------------------
 -- Search Options

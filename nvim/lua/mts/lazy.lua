@@ -69,7 +69,7 @@ require('lazy').setup(
 	-- Dynamic colorcolumns
 	{ 'Bekaboo/deadcolumn.nvim' },
 
-	{ 'hiphish/rainbow-delimiters.nvim' },
+	-- { 'hiphish/rainbow-delimiters.nvim' },
 
 	-- Backseat driver for Vim
 	{
