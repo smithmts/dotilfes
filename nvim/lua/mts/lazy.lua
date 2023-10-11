@@ -28,42 +28,47 @@ require('lazy').setup(
 ---- Install Plugins
 -----------------------------------------------------------------------
 {
-	-- Treesitter: Enhanced Highlighting/Editing/Navigation of Code
-	{
-		'nvim-treesitter/nvim-treesitter',
-		build = ":TSUpdate",
-   	 	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects',},
-	},
+    -- Treesitter: Enhanced Highlighting/Editing/Navigation of Code
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = ":TSUpdate",
+            dependencies = {'nvim-treesitter/nvim-treesitter-textobjects',},
+    },
 
-	-- Colorscheme(s) supporting treesiter
-	{
-		'Mofiqul/adwaita.nvim',
-		-- Ensure that it loads early
-		lazy = false,
-		priority = 1000,
-		-- Configure and set the theme
-		config = function ()
-			vim.g.adwaita_darker = true
-			vim.cmd.colorscheme('adwaita')
-		end,
-	},
 
-	-- LSP Plugins
-	{
-		-- Allows LSP Configuration
-		'neovim/nvim-lspconfig',
-		dependencies = {
-			-- LSP Package Manager
-			'williamboman/mason.nvim',
-			-- Bridge between Mason and LSPConfig
-			'williamboman/mason-lspconfig.nvim',
-			-- Enhanced configuation for lua_ls LSP
-			'folke/neodev.nvim',
-		},
-	},
+    -- Colorscheme supporting treesiter
+    {
+        'Mofiqul/adwaita.nvim',
+        -- Ensure that it loads early
+        lazy = false,
+        priority = 1000,
+        -- Configure and set the theme
+        config = function ()
+            vim.g.adwaita_darker = true
+            vim.cmd.colorscheme('adwaita')
+        end,
+    },
 
-	-- Popup keybindings help menu
-	{ 'folke/which-key.nvim', opts = {} },
+    -- LSP Plugins
+    {
+        -- Allows LSP Configuration
+        'neovim/nvim-lspconfig',
+        dependencies = {
+            -- LSP Package Manager
+            'williamboman/mason.nvim',
+            -- Bridge between Mason and LSPConfig
+            'williamboman/mason-lspconfig.nvim',
+            -- Enhanced configuation for lua_ls LSP
+            'folke/neodev.nvim',
+        },
+    },
+
+    -- Popup keybindings help menu
+    { 'folke/which-key.nvim', opts = {} },
+
+	-- Dynamic colorcolumns
+	{ 'Bekaboo/deadcolumn.nvim' },
+
 
 },
 
@@ -72,8 +77,8 @@ require('lazy').setup(
 -----------------------------------------------------------------------
 {
 
-	-- Use colorscheme for Lazy
-	colorscheme = {'adwaita'},
+    -- Use colorscheme for Lazy
+    colorscheme = {'adwaita'},
 
 }
 
