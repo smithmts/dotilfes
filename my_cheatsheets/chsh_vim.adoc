@@ -46,6 +46,10 @@ vim -O5 hello1.txt hello2.txt
 
 `Ctrl-r`    Redo (Undo an Undo)
 
+`s`			Delete char under cursor and go into insert mode (`xi`)
+
+`S`			Delete line under cursor and go into insert mode (`cc`)
+
 === Scrolling
 
 `Ctrl-d`	Down half screen
@@ -80,6 +84,26 @@ vim -O5 hello1.txt hello2.txt
 
 ``
 
+==== Insert-Normal Sub-mode
+
+`Ctrl-o`
+
+==== Registers
+
+`"_`	"Black Hole"
+
+`"0-9`	Last 10 yanked/deleted lines.
+
+`""`	Unnamed Register
+
+`"*`	Clipboard
+
+`"+`	Clipboard
+
+== Macros
+
+`qA`	Amend a macro without starting over (where `a` is the letter assigned to the macro)
+
 == Window/Tab/Buffer Management
 
 === Quit All Buffers
@@ -97,7 +121,7 @@ vim -O5 hello1.txt hello2.txt
 
 `Ctrl-W L`   Moves the cursor to the right window
 
-`CTRL-W W`   Does... Something.  Switches between?
+`Ctrl-W W`   Does... Something.  Switches between?
 
 === Tabs
 
@@ -153,7 +177,7 @@ Press enter Quick Help Bar to cycle through actions.
 
 == Help Pages
 
-.Enter stuff like CTRL ALT SHIFT into commands.
+.Enter stuff like Ctrl ALT SHIFT into commands.
 [source,vimscript]
 :h key-notation
 
