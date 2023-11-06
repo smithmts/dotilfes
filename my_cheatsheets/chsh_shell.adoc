@@ -1,0 +1,13 @@
+= Shell / Bash / Zsh Cheatsheet
+
+.Shabang
+[source,bash]
+#!/bin/bash
+
+.Make file executable (and readable) by all
+[source,bash]
+chmod +rx <file>
+
+.Make file executable (and readable) by file owner
+[source,bash]
+chmod +rx <file>
