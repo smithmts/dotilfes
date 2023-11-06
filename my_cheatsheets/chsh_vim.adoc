@@ -17,6 +17,15 @@ vim -c %s/pancake/bagel/g hello.txt
 [source,zsh]
 fg
 
+=== Git & Vimdiff
+
+.Setup git to use vimdiff as merge tool
+----
+git config merge.tool vimdiff
+git config merge.conflictstyle diff3
+git config mergetool.prompt false
+----
+
 === Redirect output to vim
 
 Can pipe it in.  Example with ls:
@@ -49,6 +58,14 @@ vim -O5 hello1.txt hello2.txt
 `s`			Delete char under cursor and go into insert mode (`xi`)
 
 `S`			Delete line under cursor and go into insert mode (`cc`)
+
+=== Incrementing Numbers
+
+* Go to the second item in the list.
+
+`Ctrl-v` to enter visual block mode.
+
+`g Ctrl-a` to auto increment.
 
 === Scrolling
 
