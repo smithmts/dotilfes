@@ -24,6 +24,7 @@ variety # Wallpaper slideshow
 tldr
 ffmpeg
 feh # image viewer that plays nicer with epr
+zellij
 nerd-fonts # Need to replace with a single, less-heavy font.
 
 == AUR
@@ -38,6 +39,7 @@ multimc-bin #probably go back to flatpak
 thinkfan-ui # Would like to find a cleaner way
 photocollage # When Google Photos Collage doesn't cut it.
 epr-git # ePub reader - switch to epy?
+recutils
 
 == Flatpak
 
