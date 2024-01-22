@@ -1,7 +1,7 @@
 = Packages to Install
 
 Eventually I am going to flush this out into a full install script.
-For now the idea is just to make sure I have a list of what i've installed and why.  It will replace a page I've had going in Notion.  Assume Arch-based distro.
+For now the idea is just to make sure I have a list of what I've installed and why.  It will replace a page I've had going in Notion.  Assume Arch-based distro.
 
 == Pacman
 
@@ -24,8 +24,13 @@ variety # Wallpaper slideshow
 tldr
 ffmpeg
 feh # image viewer that plays nicer with epr
+fzf
 zellij
 nerd-fonts # Need to replace with a single, less-heavy font.
+pandoc
+fzf
+texlive-latexmk (includes lots of TeX stuff) 
+tree-sitter
 
 == AUR
 
@@ -40,6 +45,7 @@ thinkfan-ui # Would like to find a cleaner way
 photocollage # When Google Photos Collage doesn't cut it.
 epr-git # ePub reader - switch to epy?
 recutils
+fireplace-git
 
 == Flatpak
 
