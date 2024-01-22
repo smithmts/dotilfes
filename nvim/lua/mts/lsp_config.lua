@@ -25,7 +25,10 @@ local servers = {
 	sqlls = {},
 	texlab = {},
     bashls = {},
-    ltex = {},
+    ltex = {
+        language = 'en-US',
+        filetypes = { 'markdown', 'tex', 'asciidoc' },
+    },
 }
 
 
@@ -35,6 +38,7 @@ local servers = {
 
 -- Setup mason so it can manage external tooling
 require('mason').setup()
+require('mason-lspconfig').setup()
 
 -- Ensure the servers above are installed
 local mason_lspconfig = require 'mason-lspconfig'
@@ -52,3 +56,11 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
+
+
+require('lspconfig')['ltex'].setup({
+  on_attach = on_attach,
+  cmd = { "ltex-ls" },
+  filetypes = { "markdown", "tex", "asciidoc" },
+  flags = { debounce_text_changes = 300 },
+})
