@@ -24,6 +24,8 @@ local servers = {
   	pylsp = {},
 	sqlls = {},
 	texlab = {},
+    bashls = {},
+    ltex = {},
 }
 
 
