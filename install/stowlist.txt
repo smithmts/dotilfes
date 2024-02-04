@@ -1,0 +1,12 @@
+cd ~/.dotfiles/
+
+# Apps that place config files in home directory.
+stow git
+stow zsh
+stow vim
+
+# Apps that use folders in .config directory.
+mkdir ~.config/nvim/
+stow --target=~.config/nvim/ nvim
+mkdir ~.config/zellij/
+stow --target=~.config/zellij/ zellij
