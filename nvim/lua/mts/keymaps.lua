@@ -6,6 +6,9 @@
 vim.keymap.set('n', '<leader>py', ':w<CR>:! python %<CR>',
 	{desc = 'Write and Run Current Python File'})
 
+-- URL Open
+vim.keymap.set('n', '<leader>ou', '<esc>:URLOpenUnderCursor<cr>',
+	{desc = 'Open URL Under Cursor'})
 
 -----------------------------------------------------------------------
 -- LSP From https://github.com/nvim-lua/kickstart.nvim
