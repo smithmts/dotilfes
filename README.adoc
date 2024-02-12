@@ -8,6 +8,7 @@
 * https://neovim.io/[Neovim]
 * https://zsh.sourceforge.io/[Zsh]
 * https://git-scm.com/[Git]
+* https://zellij.dev/[Zellij]
 
 == Goals / Guiding Principals
 
@@ -33,6 +34,18 @@ Only use plugins that can be installed via Pacman.  No frameworks, no plugin man
 
 No opinions at all.  Literally just the results of guides I've followed so far.
 
+=== Zellij
+
+My terminal multiplexer.  I chose Zellij over Tmux becuase it is, out of the box, pretty close to what I am looking for.
+
+Setup includes a layout for my current academic projects, and a config that doesn't do much beyond theming and locking in nvim and zsh as default tooling.
+
+== Theming
+
+My favorite tree-sitter supported them is based on Adwaita Dark (for now the link could be obtained from by Neovim config).
+
+For all configurations where theming is supported and something I have put the time into, I take my colors from https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/named-colors.html[Adwaita Named Colors]
+
 == Known Dependencies
 
 * For consolidating files in .dotfiles repository:
@@ -42,6 +55,8 @@ No opinions at all.  Literally just the results of guides I've followed so far.
 * Zsh plugins:
 ** https://archlinux.org/packages/extra/any/zsh-syntax-highlighting/[zsh-syntax-highlighting]
 **  https://archlinux.org/packages/extra/any/zsh-autosuggestions/[zsh-autosuggestions]
+* For LaTeX Compiling
+** A whole mess of stuff!  I'm not sure all of what I installed was even needed.  Will pull from my install list when I have that dialed in.
 
 == Work-in-progress Cheat Sheets
 

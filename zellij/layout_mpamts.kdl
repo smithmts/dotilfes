@@ -1,0 +1,41 @@
+layout {
+    default_tab_template {
+    // The status and tab bars need to be defines, so this sets up
+    // all tabs to start from the default setup.
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="dash" focus=true {
+        pane split_direction="vertical" {
+            pane {
+            name "board"
+            size "65%"
+            command "./q-dash.sh"
+            cwd "~/Documents/mpamts/db/"
+            }
+            pane {
+            name "st"
+            focus true
+            command "git"
+            args "status"
+            cwd "~/Documents/mpamts/"
+            }
+        }
+    }
+    tab name="do" {
+        pane split_direction="vertical" {
+            pane {
+            size "50%"
+            cwd "~/Documents/mpamts/"
+            }
+            pane {
+            cwd "~/Documents/mpamts/"
+            }
+        }
+    }
+}
