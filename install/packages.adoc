@@ -31,6 +31,10 @@ pandoc
 fzf
 texlive-latexmk (includes lots of TeX stuff) 
 tree-sitter
+texlive-latex
+texlive-publishers
+texlive-latexextra
+texlive-fontsrecommended
 
 == AUR
 
