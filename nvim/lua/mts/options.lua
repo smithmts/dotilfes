@@ -16,6 +16,12 @@ vim.api.nvim_set_option_value('colorcolumn', '72,80', {})
 -- Highlight current line
 vim.opt.cursorline = true
 
+-- Set wrapping
+vim.opt.wrap = true
+
+-- Prevent wrapping in the middle of a word.
+vim.opt.linebreak = true
+
 -----------------------------------------------------------------------
 -- Text Options
 -----------------------------------------------------------------------

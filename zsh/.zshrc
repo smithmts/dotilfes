@@ -85,7 +85,7 @@ RPROMPT=$'%(?..%F{#c01c28}\Uea6c [%?]%f)'
 alias ls='ls --color=auto'
 
 # My preferred way to run ls.
-alias ll='ls -laht'
+alias ll='eza -hloT --git --git-repos --icons=auto --no-permissions --no-user'
 
 # Connecting and disconnecting ProtonVPN via CLI.
 alias pvc='protonvpn-cli c'

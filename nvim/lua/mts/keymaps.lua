@@ -6,6 +6,10 @@
 vim.keymap.set('n', '<leader>py', ':w<CR>:! python %<CR>',
 	{desc = 'Write and Run Current Python File'})
 
+-- Python
+vim.keymap.set('n', '<leader>tx', ':w<CR>:! pdflatex %<CR>',
+	{desc = 'Write and Compile Current LaTeX File'})
+
 -- URL Open
 vim.keymap.set('n', '<leader>ou', '<esc>:URLOpenUnderCursor<cr>',
 	{desc = 'Open URL Under Cursor'})

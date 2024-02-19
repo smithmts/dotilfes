@@ -35,6 +35,8 @@ texlive-latex
 texlive-publishers
 texlive-latexextra
 texlive-fontsrecommended
+eza
+skim
 
 == AUR
 
@@ -50,6 +52,7 @@ photocollage # When Google Photos Collage doesn't cut it.
 epr-git # ePub reader - switch to epy?
 recutils
 fireplace-git
+eg
 
 == Flatpak
 
