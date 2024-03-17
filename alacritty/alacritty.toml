@@ -1,0 +1,39 @@
+# OPTIONS
+[window]
+decorations = "None"
+dynamic_padding = true
+
+# FONTS
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+[font]
+size = 16.0
+
+# COLORS
+[colors.primary]
+foreground = "#ffffff"
+background = "#000000"
+
+[colors.normal]
+black = "#000000"
+red = "#c01c28"
+green = "#26a269"
+yellow = "#cd9309"
+blue = "#3584e4"
+magenta = "#f66151"
+cyan = "#78aeed"
+white = "#fafafa"
