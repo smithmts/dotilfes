@@ -36,7 +36,18 @@ texlive-publishers
 texlive-latexextra
 texlive-fontsrecommended
 eza
-skim
+freerdp # Sure needed?
+gnome-remote-desktop
+base-devel # apparently not already installed.
+polkit-gnome
+udiskie
+pamixer
+pavucontrol
+brightnessctl
+swappy
+slurp
+nm-applet
+blueman
 
 == AUR
 
@@ -52,7 +63,15 @@ photocollage # When Google Photos Collage doesn't cut it.
 epr-git # ePub reader - switch to epy?
 recutils
 fireplace-git
+gnome-shell-extension-forge
 eg
+hyprland
+xdg-desktop-portal-hyprland
+rofi-lbonn-wayland-git
+rofi-bluetooth-git
+rofimoji
+
+pam-fprint-grosshack
 
 == Flatpak
 
