@@ -21,7 +21,7 @@ family = "Hack Nerd Font Mono"
 style = "Bold Italic"
 
 [font]
-size = 16.0
+size = 15.0
 
 # COLORS
 [colors.primary]
