@@ -14,6 +14,10 @@ vim.keymap.set('n', '<leader>tx', ':w<CR>:! pdflatex %<CR>',
 vim.keymap.set('n', '<leader>ou', '<esc>:URLOpenUnderCursor<cr>',
 	{desc = 'Open URL Under Cursor'})
 
+-- Word Count
+vim.keymap.set('v', '<leader>g', 'g<C-g>',
+	{desc = 'Word Count'})
+
 -----------------------------------------------------------------------
 -- LSP From https://github.com/nvim-lua/kickstart.nvim
 -----------------------------------------------------------------------
