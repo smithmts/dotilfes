@@ -4,9 +4,17 @@ cd ~/.dotfiles/
 stow git
 stow zsh
 stow vim
+stow alacritty
 
 # Apps that use folders in .config directory.
-mkdir ~.config/nvim/
-stow --target=~.config/nvim/ nvim
-mkdir ~.config/zellij/
-stow --target=~.config/zellij/ zellij
+# These have to be run from home
+mkdir .config/nvim/
+stow --target=.config/nvim/ --dir=.dotfiles nvim
+mkdir .config/zellij/
+stow --target=.config/zellij/ --dir=.dotfiles zellij
+mkdir .config/alacritty/
+stow --target=.config/alacritty/ --dir=.dotfiles alacritty
+mkdir .config/hypr/
+stow --target=.config/hypr/ --dir=.dotfiles hyprland
+mkdir .config/rofi/
+stow --target=.config/rofi/ --dir=.dotfiles rofi
