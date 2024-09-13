@@ -83,6 +83,7 @@ require('lazy').setup(
             build = 'make',
         },
 
+        -- Open web links from Neovim
         {
             "sontungexpt/url-open",
             event = "VeryLazy",
@@ -96,12 +97,29 @@ require('lazy').setup(
             end,
         },
 
+        -- Comment assist.
         {
             'numToStr/Comment.nvim',
             lazy = false,
         },
 
-
+        -- LLLM/AI in Neovim
+        {
+          "frankroeder/parrot.nvim",
+          dependencies = { 'ibhagwan/fzf-lua', 'nvim-lua/plenary.nvim' },
+          config = function()
+            require("parrot").setup {
+            -- Providers must be explicitly added to make them available.
+              providers = {
+                -- gemini = { api_key = os.getenv "GEMINI_API_KEY", },
+                groq = { api_key = os.getenv "GROQ_API_KEY", },
+                -- pplx = { api_key = os.getenv "PERPLEXITY_API_KEY", },
+                -- provide an empty list to make provider available (no API key required)
+                -- ollama = {},
+                },
+            }
+            end,
+        }
     },
 
 -----------------------------------------------------------------------
