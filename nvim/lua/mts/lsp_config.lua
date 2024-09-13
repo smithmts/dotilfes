@@ -30,6 +30,7 @@ local servers = {
     ltex = {
         language = 'en-US',
         filetypes = { 'markdown', 'tex', 'asciidoc' },
+        additionalRules = { enablePickyRules = true, },
     },
 }
 
