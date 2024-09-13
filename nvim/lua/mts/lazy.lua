@@ -71,17 +71,6 @@ require('lazy').setup(
 
         -- { 'hiphish/rainbow-delimiters.nvim' },
 
-        -- Backseat driver for Vim
-        {
-            "m4xshen/hardtime.nvim",
-            dependencies = {
-                "MunifTanjim/nui.nvim",
-                "nvim-lua/plenary.nvim",
-            },
-            -- Only scold for repeat keys, not block.
-            opts = { restriction_mode = "hint" }
-        },
-
         -- Color code highlighter
         {
             'NvChad/nvim-colorizer.lua',
