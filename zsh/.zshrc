@@ -10,6 +10,7 @@ HISTFILE=~/.histfile
 HISTSIZE=365000
 SAVEHIST=365000
 
+# Share history across all sessions.
 setopt SHARE_HISTORY
 
 # A few basic options when seem to be sane defaults.
