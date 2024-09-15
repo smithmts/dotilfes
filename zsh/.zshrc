@@ -10,6 +10,8 @@ HISTFILE=~/.histfile
 HISTSIZE=365000
 SAVEHIST=365000
 
+setopt SHARE_HISTORY
+
 # A few basic options when seem to be sane defaults.
 setopt autocd extendedglob nomatch notify
 
