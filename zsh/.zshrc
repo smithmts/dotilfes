@@ -82,6 +82,11 @@ RPROMPT=$'%(?..%F{#c01c28}\Uea6c [%?]%f)'
 # Version with username, error code (and snazzy nerd-fonts glyph) when applicable or checkbox (also nerd-fonts glyph) when no errors.
  # RPROMPT=$'%(?.%F{#26a269}\Uf012c%f.%F{#c01c28}\Uea6c [%?]%f) %F{#78aeed}%B%n%b%f'
 
+######################################################################
+# Source Other Files
+######################################################################
+
+source "/home/mts/.dotfiles/zsh/.privatezshrc"
 
 ######################################################################
 # Aliases
